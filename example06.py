@@ -1,5 +1,6 @@
 import numpy as np
 
+# return y = func applied to each element in x
 def map(x, func):
     numel = len(x)
     y = np.zeros( numel )
@@ -7,6 +8,8 @@ def map(x, func):
         y[i] = func( x[i])
     return y
 
+def power(x):
+    return x**2
+#
 x = [1,2,3,4,5]
-func = lambda x: x**2
-print map(x,func)
+print map(x,power)
