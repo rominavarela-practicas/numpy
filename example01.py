@@ -7,4 +7,4 @@ if x%2==0 :
 elif x%3==0 :
     print 'multiplo de 3'
 else :
-    print x
+    print 'num = ', x
