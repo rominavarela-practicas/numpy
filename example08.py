@@ -1,3 +1,4 @@
+import math
 import sympy as sym
 
 pi = sym.pi;
@@ -5,6 +6,7 @@ x = sym.Symbol('x');
 y = sym.Symbol('y');
 z = sym.Symbol('z');
 fx = sym.cos(x) - x; # -x + cos(x)
+gx = lambda x: math.cos(x) - x # gx(5) = -4.7163...
 fxyz = sym.sympify('x*y*z') # x*y*z
 
 # sustitucion
